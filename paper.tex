@@ -1,0 +1,141 @@
+% ===================================
+%     Template for the final design
+%            by H.T.K
+%       tkhang@seu.edu.cn
+% ===================================
+\input{mybib.tex}
+\documentclass[a4paper, oneside, UTF8]{ctexbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+%\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{amsfonts} %一些特殊数学字体
+
+\usepackage{hologo}
+\usepackage{gbt7714}
+%\bibliographystyle{gbt7714-numerical}
+
+% \titlespacing*{\chapter} {0pt}{50pt}{40pt}
+%\usepackage{fontspec, xunicode, xlextra}
+% \usepackage[CJKnumber]{xeCJK}
+
+\usepackage{libertine}
+
+\usepackage{type1cm}
+
+% 设置页面边距
+\usepackage[left=2.5cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+\usepackage{titlesec}
+
+\setmainfont{Times New Roman}
+\ctexset{
+  chapter/format+={\vspace{-2.5em}\CJKfamily{hei}\bfseries \fontsize{16pt}{42pt}\selectfont},
+  chapter/pagestyle = main2,
+  %chapter/name = {第,章},
+  %chapter/titleformat = \chaptertitleformat,
+  chapter/titleformat={\CJKfamily{hei}\bfseries\fontsize{16pt}{24pt}\selectfont},
+  section/format+={\raggedright\fontsize{14pt}{16.8pt}\selectfont},
+  subsection/format+={\raggedright\fontsize{12pt}{14.4pt}\selectfont}
+}
+
+\titlespacing*{\chapter} {-100pt}{50pt}{}
+
+%\titleformat{\chapter}{\centering\CJKfamily{hei}\bfseries\fontsize{16pt}{24pt}\selectfont}{第\,\CJKnumber{\thechapter}\,章}{1em}{}
+%\titleformat{\section}{\CJKfamily{hei}\bfseries\fontsize{14pt}{21pt}\selectfont}{}{1em}{}
+% \CTEXsetup[format={\CJKfamily{hei}\bfseries\fontsize{14pt}{21pt}\selectfont}]{section} 
+% \CTEXsetup[format={\CJKfamily{hei}\centering\fontsize{16pt}{24pt}\selectfont}]{chapter} 
+% \renewcommand{\chaptername}{第\,\CJKnumber{\thechapter}\,章}
+
+\begin{document}
+
+% ==========================================
+%         Include settings first
+% ==========================================
+\input{MySetting.tex}
+
+\input{cover/cover.tex}
+
+% ==========================================
+%                Abstract
+% ==========================================
+
+\pagestyle{main1}    %使用该style
+
+\newpage
+\section*{\centering\CJKfamily{hei}\fontsize{16pt}{24pt} 摘\qquad 要}
+%\vspace{-2em}
+\input{Abstract-CH.tex}
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\addcontentsline{toc}{chapter}{摘\qquad 要}
+%\@openrighttrue\makeatother 
+
+\newpage
+\section*{\centering\CJKfamily{hei}\fontsize{16pt}{24pt}ABSTRACT}
+%\vspace{-2em}
+\input{Abstract-EN.tex}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+% ==========================================
+%                  目录
+% ==========================================
+\newpage
+\tableofcontents
+\addcontentsline{toc}{chapter}{目\qquad 录}
+
+%\pagestyle{main2}    %使用该style
+
+% ==========================================
+%          第一章 绪论，此页开始编码
+% ==========================================
+
+\pagestyle{main2}
+\topskip=10pt
+\chapter{绪论}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\vspace{-2em}
+\input{background.tex}
+
+% ==========================================
+%                 正文
+% ==========================================
+\chapter{正文}
+\vspace{-2em}
+\input{body.tex}
+
+% ==========================================
+%              总结与展望
+% ==========================================
+\chapter{\textbf{总结与展望}}
+
+% ==========================================
+%              参考文献
+% ==========================================
+
+%\bibliographystyle{abbrv}
+\bibliography{egbib}
+\addcontentsline{toc}{chapter}{参考文献}
+
+
+% ==========================================
+%                  致谢
+% ==========================================
+\chapter*{致\qquad 谢}
+\vspace{-2em}
+\input{Thanks.tex}
+\addcontentsline{toc}{chapter}{致\qquad 谢}
+
+\end{document}
