@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper.aux
+The style file: gbt7714-unsrt.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: egbib.bib
+You've used 1 entry,
+            4066 wiz_defined-function locations,
+            860 strings with 6243 characters,
+and the built_in function-call counts, 1125 in all, are:
+= -- 64
+> -- 57
+< -- 94
++ -- 50
+- -- 19
+* -- 20
+:= -- 209
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 33
+cite$ -- 1
+duplicate$ -- 20
+empty$ -- 50
+format.name$ -- 6
+if$ -- 279
+int.to.chr$ -- 1
+int.to.str$ -- 2
+missing$ -- 0
+newline$ -- 15
+num.names$ -- 3
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 1
+quote$ -- 0
+skip$ -- 77
+stack$ -- 0
+substring$ -- 62
+swap$ -- 1
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 7
+warning$ -- 0
+while$ -- 9
+width$ -- 0
+write$ -- 22
