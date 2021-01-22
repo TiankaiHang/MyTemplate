@@ -24,7 +24,7 @@
 \usepackage{gbt7714}
 %\bibliographystyle{gbt7714-numerical}
 
-% \titlespacing*{\chapter} {0pt}{50pt}{40pt}
+\titlespacing*{\chapter} {0pt}{50pt}{40pt}
 %\usepackage{fontspec, xunicode, xlextra}
 % \usepackage[CJKnumber]{xeCJK}
 
@@ -49,7 +49,7 @@
   subsection/format+={\raggedright\fontsize{12pt}{14.4pt}\selectfont}
 }
 
-\titlespacing*{\chapter} {-100pt}{50pt}{}
+%\titlespacing*{\chapter}{0pt}{-2pt}{2pt}
 
 %\titleformat{\chapter}{\centering\CJKfamily{hei}\bfseries\fontsize{16pt}{24pt}\selectfont}{第\,\CJKnumber{\thechapter}\,章}{1em}{}
 %\titleformat{\section}{\CJKfamily{hei}\bfseries\fontsize{14pt}{21pt}\selectfont}{}{1em}{}
@@ -78,7 +78,7 @@
 \input{Abstract-CH.tex}
 \setcounter{page}{1}
 \pagenumbering{Roman}
-\addcontentsline{toc}{chapter}{摘\qquad 要}
+\addcontentsline{toc}{chapter}{摘\texorpdfstring{\qquad} 要}
 %\@openrighttrue\makeatother 
 
 \newpage
@@ -92,7 +92,7 @@
 % ==========================================
 \newpage
 \tableofcontents
-\addcontentsline{toc}{chapter}{目\qquad 录}
+\addcontentsline{toc}{chapter}{目\texorpdfstring{\qquad} 录}
 
 %\pagestyle{main2}    %使用该style
 
@@ -123,7 +123,7 @@
 % ==========================================
 %              总结与展望
 % ==========================================
-\chapter{\textbf{总结与展望}}
+\chapter{总结与展望}
 
 % ==========================================
 %              参考文献
@@ -140,6 +140,6 @@
 \chapter*{致\qquad 谢}
 \vspace{-2em}
 \input{Thanks.tex}
-\addcontentsline{toc}{chapter}{致\qquad 谢}
+\addcontentsline{toc}{chapter}{致\texorpdfstring{\qquad} 谢}
 
 \end{document}
