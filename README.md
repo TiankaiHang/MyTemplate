@@ -12,6 +12,6 @@ My latex template for seuthesis-2020
 
 ## overleaf效果
 
-<img width=240 src="figs/demo.png" style="zoom:20%"/>
+<img src="figs/demo.png" style="zoom:20%"/>
 
-<img width=240 src="figs/demo1.png" style="zoom:20%"/>
+<img src="figs/demo1.png" style="zoom:20%"/>
